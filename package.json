@@ -6,6 +6,9 @@
   "repository": "github.com/moseslucas/frontend-react",
   "author": "Moses Lucas",
   "license": "MIT",
+  "scripts": {
+    "start": "babel-node bin/server.js"
+  },
   "dependencies": { 
     "babel-polyfill": "6.8.0", 
     "react": "15.0.2",
