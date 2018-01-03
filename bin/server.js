@@ -16,6 +16,8 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler))
 
+/* get all routes and return entry point app.html 
+so that react-routes will override all routes */
 app.get('*', function(req, res) {
   res.sendFile(path.join( __dirname, '../src/app.html'))
 })

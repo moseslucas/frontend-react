@@ -7,7 +7,10 @@
   "author": "Moses Lucas",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node bin/server.js"
+    "start": "npm-run-all --parallel server lint:watch",
+    "server": "babel-node bin/server.js",
+    "lint": "node_modules/.bin/esw webpack.config.* src bin",
+    "lint:watch": "npm run lint -- --watch"
   },
   "dependencies": { 
     "babel-polyfill": "6.8.0", 
