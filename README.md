@@ -1,6 +1,6 @@
-## Front-End React
+## Front-End React with Express
 
-This is a frontend React.js boilerplate.
+This is a frontend React.js boilerplate with Express serving as backend.
 Created to serve a [backend using graphql](https://github.com/moseslucas/api-rails-graphql)
 
 ## Installation
